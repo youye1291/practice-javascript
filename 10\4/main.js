@@ -7,3 +7,15 @@ if(month<1 || month>12){
 }
 console.log("Month:",month,"Day:",day);
 }
+
+const monthSelect = document.getElementById("month2");
+monthSelectlist();
+function monthSelectlist(){
+for (let i=1;1<12;i++){
+let option = document.createElement('option');
+option.value = i;
+option.textContent = i + "月";
+monthSelect.appendChild(option);
+
+}
+}
