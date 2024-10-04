@@ -1,23 +1,9 @@
-function changeColor(){
-
-document.getElementById("text").style.color="red";
+function errorInput(){
+const month = document.getElementById("month").value;
+const day = document.getElementById("day").value;
+if(month<1 || month>12){
+    alert("適切な値ではありません")
+    return
 }
-document.querySelector("h1").style.color="red";
-
-//document.getElementById("text").style.color="red";
-/*これは、ドキュメントの中の「text」というIDを持っているタグのスタイルの色を赤にしてください。*/
-
-let count = 0;
-
-function increaseCount(){
-
-count++;
-document.getElementById("counter").innerText = count;
-
+console.log("Month:",month,"Day:",day);
 }
-function herasuCount(){
-
-    count--;
-    document.getElementById("counter").innerText = count;
-    
-    }
