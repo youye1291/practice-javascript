@@ -76,5 +76,10 @@ function startNumberGuessGame(){
     })
 
     gameContainer.appendChild(button);
+
+    let count = 0;
+    const countDisplay = document.createElement("p");
+    countDisplay.textContent = `試行回数: ${count}`;
+    gameContainer.appendChild(countDisplay);
 }
 startNumberGuessGame();
